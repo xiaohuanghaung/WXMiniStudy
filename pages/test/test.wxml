@@ -1,0 +1,18 @@
+<!--pages/test/test.wxml-->
+<input class="searchPut" bindconfirm="shouldDone" placeholder="输入来搜索🔍" type="text" confirm-type="Search">
+</input>
+<view class="table">
+  <view class='contentview' wx:for="{{searchResults}}" wx:for-index="bindex">
+   <view class="listitem"  bindtap='didSelectCell'  data-bindex='{{bindex}}'>
+     <image class="img" src="{{item.cover_path}}"></image>
+      <view class="right">
+          <view class="name">{{item.title}}</view>
+          <view class="nameDes">{{item.intro}}</view>
+          <view class="bottomView">
+           <view class='playtimes'>播放次数:{{item.play}}</view>
+           <view class='length'>总共:{{item.tracks}}集</view>
+          </view>
+      </view>
+    </view>
+  </view>
+</view>

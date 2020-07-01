@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#FF7225",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "小黄小程序首页",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}
